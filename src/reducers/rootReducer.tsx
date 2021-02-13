@@ -3,8 +3,9 @@ import { combineReducers } from 'redux'
 
 
 
-const reducers = {
+const rootReducer = combineReducers({
 
-};
+})
 
-export default combineReducers(reducers);
+
+export default rootReducer

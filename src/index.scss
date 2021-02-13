@@ -6,18 +6,12 @@
 }
 
 html {
-  font-family: sans-serif;
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-@-ms-viewport {
-  width: device-width;
+  line-height: 1.2;
+  font-size: 16px;
 }
 
 body {
-    height: 100%;
+  margin: 0;  
 }
 
 ul {
@@ -25,7 +19,7 @@ ul {
   padding: 0;
 }
 p {
-  margin: 0;
+  margin-top: 0;
 }
 
 ul,
@@ -34,21 +28,6 @@ li {
 }
 a {
   text-decoration: none;
-}
-
-$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100); // Adjust this to include the pixel amounts you need.
-$sides: (top, bottom, left, right); // Leave this variable alone
-
-@each $space in $spaceamounts {
-  @each $side in $sides {
-    .m#{str-slice($side, 0, 1)}-#{$space} {
-      margin-#{$side}: #{$space}px;
-    }
-
-    .p#{str-slice($side, 0, 1)}-#{$space} {
-      padding-#{$side}: #{$space}px;
-    }
-  }
 }
 
 h1,
@@ -65,4 +44,18 @@ h5 {
 
 .d-flex {
   display: flex;
+}
+
+.container {
+  width: 80%;
+  padding: 20px 15px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  margin: 0 -10px;
+}
+.col {
+  padding: 0 10px;
 }
